@@ -9,84 +9,83 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style>
-    .hero-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-      filter: brightness(0.65);
+    .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.55); }
+    .section-padding { padding-top: 5rem; padding-bottom: 5rem; }
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 2.75rem; line-height: 1.1; }
     }
-    .hero-content { position: relative; z-index: 2; }
   </style>
 </head>
-<body class="bg-[#f8f5f0] text-gray-800 overflow-x-hidden">
+<body class="bg-[#f8f6f0] text-gray-800 font-sans">
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="relative h-screen flex items-center justify-center overflow-hidden">
     <video autoplay loop muted playsinline class="hero-video">
-      <source src="https://assets.mixkit.co/videos/preview/75462/75462-large.mp4" type="video/mp4">
+      <source src="https://assets.mixkit.co/videos/preview/754/754-large.mp4" type="video/mp4">
     </video>
-    <div class="hero-content text-center text-white px-6 max-w-4xl mx-auto">
-      <h1 class="text-6xl md:text-7xl font-bold mb-6" data-aos="fade-up">ВместеНаПрироде 🌲</h1>
-      <p class="text-3xl md:text-4xl mb-8" data-aos="fade-up" data-aos-delay="200">Выходные на природе,<br>которые сближают всю семью</p>
-      <p class="text-xl mb-12 max-w-md mx-auto" data-aos="fade-up" data-aos-delay="400">Игры • Новые друзья • Настоящее приключение рядом с Хабаровском</p>
-      <a href="#booking" class="inline-block bg-[#ff8c42] hover:bg-orange-600 text-white px-12 py-5 rounded-2xl text-2xl font-semibold transition-all transform hover:scale-105 shadow-xl" data-aos="fade-up" data-aos-delay="600">
-        Записаться на ближайший выезд
+    <div class="hero-content relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight" data-aos="fade-up">
+        Выходные, которые сближают семью
+      </h1>
+      <p class="text-xl md:text-3xl mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+        ВместеНаПрироде — семейные туры выходного дня недалеко от Хабаровска
+      </p>
+      <a href="#booking" 
+         class="inline-block bg-[#e67e22] hover:bg-orange-600 text-white px-10 py-6 rounded-3xl text-2xl font-semibold transition-all hover:scale-105 shadow-2xl">
+        Записаться на ближайший выезд →
       </a>
+      <p class="mt-8 text-sm opacity-90">Следующий тур: 14–15 июня • Осталось 11 мест</p>
     </div>
-    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-white">
       <i class="fa-solid fa-chevron-down text-4xl"></i>
     </div>
   </section>
 
   <!-- Benefits -->
-  <section class="py-24 bg-white">
+  <section class="section-padding bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Почему семьи влюбляются в наши выезды</h2>
+      <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Почему семьи выбирают нас</h2>
       <div class="grid md:grid-cols-3 gap-10">
         <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-20 h-20 mx-auto bg-green-100 rounded-2xl flex items-center justify-center mb-6 text-4xl">🌲</div>
-          <h3 class="text-2xl font-semibold mb-3">Природа Хабаровского края</h3>
-          <p class="text-gray-600">Леса, сопки и чистый воздух всего в 40–70 минутах от города</p>
+          <div class="text-6xl mb-6">🌲</div>
+          <h3 class="text-2xl font-semibold mb-3">Природа в 40 минутах</h3>
+          <p class="text-gray-600">Красивые леса, поля и сопки Хабаровского края. Чистый воздух и тишина.</p>
         </div>
         <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-20 h-20 mx-auto bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-4xl">🎲</div>
+          <div class="text-6xl mb-6">🎲</div>
           <h3 class="text-2xl font-semibold mb-3">Игры для всей семьи</h3>
-          <p class="text-gray-600">Весёлые командные квесты, где взрослые и дети играют вместе</p>
+          <p class="text-gray-600">Квесты, эстафеты и задания, где взрослые и дети играют вместе.</p>
         </div>
         <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-20 h-20 mx-auto bg-pink-100 rounded-2xl flex items-center justify-center mb-6 text-4xl">👨‍👩‍👧‍👦</div>
+          <div class="text-6xl mb-6">👨‍👩‍👧</div>
           <h3 class="text-2xl font-semibold mb-3">Новое сообщество</h3>
-          <p class="text-gray-600">Дети находят друзей, родители — единомышленников</p>
+          <p class="text-gray-600">Дети находят друзей, родители — единомышленников.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Program -->
-  <section class="py-24 bg-[#f0f7f0]">
+  <section class="section-padding bg-[#f0f7f0]">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Как проходит наш семейный выезд</h2>
+      <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Как проходят наши выходные</h2>
       <div class="grid md:grid-cols-2 gap-12">
-        <div class="bg-white rounded-3xl p-10 shadow-xl" data-aos="fade-right">
-          <h3 class="text-3xl font-bold mb-8 flex items-center gap-4"><span class="text-5xl">🌄</span> Суббота</h3>
-          <ul class="space-y-6 text-lg">
-            <li class="flex gap-4"><span class="text-green-500 font-bold">✔</span> Комфортный выезд из Хабаровска</li>
-            <li class="flex gap-4"><span class="text-green-500 font-bold">✔</span> Приветственный пикник на природе</li>
-            <li class="flex gap-4"><span class="text-green-500 font-bold">✔</span> Большой семейный квест</li>
-            <li class="flex gap-4"><span class="text-green-500 font-bold">✔</span> Общение и новые знакомства</li>
+        <div class="bg-white p-10 rounded-3xl shadow-xl" data-aos="fade-right">
+          <h3 class="text-3xl font-bold mb-6">🌄 Суббота</h3>
+          <ul class="space-y-5 text-lg">
+            <li>✔ Утренний выезд из Хабаровска</li>
+            <li>✔ Приветственный пикник</li>
+            <li>✔ Большой семейный квест</li>
+            <li>✔ Общение и свободное время</li>
           </ul>
         </div>
-        <div class="bg-white rounded-3xl p-10 shadow-xl" data-aos="fade-left">
-          <h3 class="text-3xl font-bold mb-8 flex items-center gap-4"><span class="text-5xl">🌅</span> Воскресенье</h3>
-          <ul class="space-y-6 text-lg">
-            <li class="flex gap-4"><span class="text-green-500 font-bold">✔</span> Утренняя активность для всех</li>
-            <li class="flex gap-4"><span class="text-green-500 font-bold">✔</span> Творческие мастер-классы</li>
-            <li class="flex gap-4"><span class="text-green-500 font-bold">✔</span> Семейная фотосессия</li>
-            <li class="flex gap-4"><span class="text-green-500 font-bold">✔</span> Тёплый обед и возвращение</li>
+        <div class="bg-white p-10 rounded-3xl shadow-xl" data-aos="fade-left">
+          <h3 class="text-3xl font-bold mb-6">🌅 Воскресенье</h3>
+          <ul class="space-y-5 text-lg">
+            <li>✔ Утренняя зарядка для всех</li>
+            <li>✔ Мастер-классы для детей</li>
+            <li>✔ Семейная фотосессия</li>
+            <li>✔ Тёплый обед и возвращение</li>
           </ul>
         </div>
       </div>
@@ -94,39 +93,37 @@
   </section>
 
   <!-- Gallery -->
-  <section class="py-24 bg-white">
+  <section class="section-padding bg-white">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Моменты с наших выездов</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <img src="https://source.unsplash.com/random/600x800/?happy,family,forest" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="">
-        <img src="https://source.unsplash.com/random/600x800/?children,playing,nature" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="">
-        <img src="https://source.unsplash.com/random/600x800/?family,picnic,summer" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="">
-        <img src="https://source.unsplash.com/random/600x800/?family,outdoor,hiking" class="rounded-3xl shadow-lg hover:scale-105 transition duration-300" alt="">
+      <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Моменты счастья</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://source.unsplash.com/random/600x800/?family,forest,happy" class="rounded-3xl shadow-md hover:scale-105 transition" alt="">
+        <img src="https://source.unsplash.com/random/600x800/?children,playing,nature" class="rounded-3xl shadow-md hover:scale-105 transition" alt="">
+        <img src="https://source.unsplash.com/random/600x800/?family,picnic,outdoor" class="rounded-3xl shadow-md hover:scale-105 transition" alt="">
+        <img src="https://source.unsplash.com/random/600x800/?happy,family,camping" class="rounded-3xl shadow-md hover:scale-105 transition" alt="">
       </div>
     </div>
   </section>
 
   <!-- Booking -->
-  <section id="booking" class="py-24 bg-gradient-to-br from-orange-50 to-amber-50">
-    <div class="max-w-2xl mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-6" data-aos="fade-up">Давайте проведём выходные вместе!</h2>
-      <p class="text-2xl mb-10" data-aos="fade-up" data-aos-delay="100">Ближайший выезд: <strong>14–15 июня 2026</strong> • Осталось 11 мест</p>
+  <section id="booking" class="section-padding bg-gradient-to-br from-orange-50 to-amber-50">
+    <div class="max-w-xl mx-auto px-6 text-center">
+      <h2 class="text-5xl font-bold mb-6" data-aos="fade-up">Готовы к настоящим выходным?</h2>
+      <p class="text-2xl mb-10" data-aos="fade-up" data-aos-delay="100">14–15 июня 2026 • Цена: 6900 ₽ / семья</p>
       
-      <form class="space-y-6" action="https://formsubmit.co/your-email@example.com" method="POST">
-        <input type="text" name="name" placeholder="Имя и фамилия" required class="w-full p-5 rounded-2xl border focus:border-orange-500 outline-none text-lg">
-        <input type="tel" name="phone" placeholder="Телефон WhatsApp / Telegram" required class="w-full p-5 rounded-2xl border focus:border-orange-500 outline-none text-lg">
-        <input type="email" name="email" placeholder="Email" class="w-full p-5 rounded-2xl border focus:border-orange-500 outline-none text-lg">
-        <button type="submit" class="w-full bg-[#ff8c42] hover:bg-orange-600 text-white py-6 rounded-2xl text-2xl font-semibold transition-all shadow-lg">
+      <form class="space-y-6" action="https://formsubmit.co/your-email@domain.com" method="POST">
+        <input type="text" name="name" placeholder="Имя и фамилия" required class="w-full px-6 py-5 rounded-3xl border focus:border-orange-500 outline-none text-lg">
+        <input type="tel" name="phone" placeholder="Телефон WhatsApp / Telegram" required class="w-full px-6 py-5 rounded-3xl border focus:border-orange-500 outline-none text-lg">
+        <button type="submit" class="w-full bg-[#e67e22] hover:bg-orange-600 text-white py-7 rounded-3xl text-2xl font-semibold transition-all">
           Забронировать место
         </button>
       </form>
-      <p class="text-sm text-gray-500 mt-8">Свяжемся с вами в течение часа</p>
+      <p class="text-sm text-gray-500 mt-6">Ответим в течение 1 часа • Мест мало</p>
     </div>
   </section>
 
-  <footer class="bg-green-900 text-white py-16 text-center">
-    <p class="text-2xl font-semibold">ВместеНаПрироде — Семейные выходные на природе Хабаровска ❤️</p>
-    <p class="mt-3 text-green-300">© 2026 | С теплом к каждой семье</p>
+  <footer class="bg-green-900 text-white py-12 text-center">
+    <p class="text-xl">ВместеНаПрироде © 2026 — Семейные выходные на природе Хабаровска ❤️</p>
   </footer>
 
   <script>
